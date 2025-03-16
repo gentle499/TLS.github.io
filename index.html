@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>骆驼奶商店</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f5eb;
+            color: #333;
+        }
+        header {
+            background-color: #8b5a2b;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #8b5a2b;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+        }
+        .product-img {
+            height: 200px;
+            background-color: #e0d5c1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8b5a2b;
+            font-weight: bold;
+        }
+        .product-info {
+            padding: 1.5rem;
+        }
+        .product-info h3 {
+            margin-top: 0;
+            color: #8b5a2b;
+        }
+        .price {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #8b5a2b;
+        }
+        .benefits {
+            background-color: #e0d5c1;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .benefits h2 {
+            color: #8b5a2b;
+            margin-bottom: 2rem;
+        }
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .benefit {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #8b5a2b;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>骆驼奶商店</h1>
+        <p>天然、健康、营养丰富的骆驼奶产品</p>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h2>探索骆驼奶的神奇功效</h2>
+            <p>骆驼奶被誉为"沙漠白金"，富含维生素、矿物质和抗氧化剂，是一种天然的健康饮品。我们的骆驼奶直接来自优质牧场，保证新鲜和纯净。</p>
+        </section>
+
+        <section class="products">
+            <div class="product">
+                <div class="product-img">骆驼奶 - 图片</div>
+                <div class="product-info">
+                    <h3>新鲜骆驼奶</h3>
+                    <p>100%纯天然，未经加工的新鲜骆驼奶，保留所有营养成分。</p>
+                    <p class="price">¥68.00 / 500ml</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-img">骆驼奶粉 - 图片</div>
+                <div class="product-info">
+                    <h3>骆驼奶粉</h3>
+                    <p>方便储存和使用的骆驼奶粉，营养价值与新鲜骆驼奶相当。</p>
+                    <p class="price">¥198.00 / 400g</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-img">骆驼奶护肤品 - 图片</div>
+                <div class="product-info">
+                    <h3>骆驼奶护肤套装</h3>
+                    <p>含有骆驼奶精华的天然护肤品，滋润肌肤，改善肤质。</p>
+                    <p class="price">¥328.00 / 套</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <h2>骆驼奶的健康益处</h2>
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <h3>增强免疫力</h3>
+                    <p>骆驼奶含有丰富的免疫球蛋白和乳铁蛋白，有助于增强人体免疫系统。</p>
+                </div>
+                <div class="benefit">
+                    <h3>改善消化系统</h3>
+                    <p>骆驼奶易于消化，对肠胃健康有益，可以缓解消化不良和胃部不适。</p>
+                </div>
+                <div class="benefit">
+                    <h3>控制血糖</h3>
+                    <p>研究表明，骆驼奶含有类似胰岛素的物质，有助于控制血糖水平。</p>
+                </div>
+                <div class="benefit">
+                    <h3>抗过敏</h3>
+                    <p>骆驼奶不含常见的牛奶过敏原，是牛奶过敏人群的理想替代品。</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2023 骆驼奶商店 版权所有</p>
+        <p>联系我们: info@camel-milk-store.com | 电话: 123-456-7890</p>
+    </footer>
+</body>
+</html>
